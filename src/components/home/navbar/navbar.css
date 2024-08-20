@@ -1,0 +1,48 @@
+.header {
+    /* background-color: aquamarine; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 0px 60px;
+}
+
+.nav {
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: chartreuse; */
+    min-height: 60px;
+}
+
+.nav ul{
+    display: flex;
+    /* gap: 20px; */
+    /* background-color: rgb(255, 246, 127); */
+}
+.nav ul li{
+    list-style: none;
+   
+}
+.nav ul li a{
+    /* background-color: blue; */
+    /* border-bottom: 1px solid white; */
+    padding: 8px 0px;
+    margin: 0px 16px;
+    color: white ;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.nav ul li a.active {
+    border-bottom: 2px solid white;
+    color: white; /* This changes the text color if needed */
+}
+
+.logo{
+  font-size: 26px;
+  font-weight: 700;
+}

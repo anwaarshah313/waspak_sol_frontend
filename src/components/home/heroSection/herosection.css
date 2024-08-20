@@ -1,0 +1,46 @@
+.main {
+    position: relative;
+    height: 100vh;
+    min-height: 660px;
+    max-height: 900px;
+    text-align: center;
+}
+
+
+.navbarDiv {
+    /* background-color: blueviolet; */
+    color: white;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.textDiv {
+    background-image: linear-gradient(16deg, #2200ff11 7.54%, rgba(0, 0, 0, 0.732) 29.76%), url(../../../../public/images/hero_background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.textDiv h1 {
+    color: white;
+    font-size: 54.334px;
+    font-weight: 800;
+    line-height: 70px;
+}
+
+.textDiv p {
+    color: white;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 400;
+
+}
