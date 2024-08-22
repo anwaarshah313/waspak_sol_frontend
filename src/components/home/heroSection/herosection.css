@@ -1,22 +1,11 @@
-.main {
-    position: relative;
+/* .main {
+
     height: 100vh;
-    min-height: 660px;
+    min-height: 620px;
     max-height: 900px;
     text-align: center;
-}
+} */
 
-
-.navbarDiv {
-    /* background-color: blueviolet; */
-    color: white;
-    position: absolute;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-}
 
 .textDiv {
     background-image: linear-gradient(16deg, #2200ff11 7.54%, rgba(0, 0, 0, 0.732) 29.76%), url(../../../../public/images/hero_background.webp);
@@ -27,7 +16,10 @@
     align-items: center;
     text-align: center;
     justify-content: center;
-    height: 100%;
+    height: calc(100% - 68px);
+    height: calc(100vh - 68px);
+    min-height: 540px;
+    max-height: 800px;
 }
 
 .textDiv h1 {
@@ -39,8 +31,39 @@
 
 .textDiv p {
     color: white;
-    margin-top: 20px;
+    margin-bottom: 40px;
     font-size: 18px;
     font-weight: 400;
 
+}
+
+.button {
+    background: linear-gradient(180deg, #051225,  #00060f 60%, #051225);
+    color: rgb(255, 255, 255);
+    padding: 10px 13px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-image: linear-gradient(to left, #051225 , #ffffff2b) 1;
+    border-radius:0px;
+    transition: all 0.5s ease;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+
+}
+
+.button:hover {
+    padding: 10px 25px;
+    background: linear-gradient(180deg, #051225,  #00060f 60%, #051225);
+    border: 1px solid transparent;
+    border-image: linear-gradient(to left, #ffffff2b, #051225) 1;
+    border-radius: 0px;
+    color: rgb(255, 255, 255);
+
+}
+
+.button:hover::before {
+    content: "Explore";
+    padding-right: 10px;
+    transition: all 0.3s ease;
 }
