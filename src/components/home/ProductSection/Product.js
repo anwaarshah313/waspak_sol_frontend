@@ -5,55 +5,60 @@ export default function Product() {
     const [selectedProduct, setSelectedProduct] = useState(null);
 
     const products = [
-        { 
-            icon: <i className="bi bi-bricks"></i>, 
-            heading: 'Product 1', 
-            description: 'This is a description of product 1.',
-            longDescription: 'This is a more detailed description of Product 1. It includes more information about the features and benefits.',
-            keyPoints: ['Point 1', 'Point 2', 'Point 3'],
+        {
+            icon: <i className="bi bi-bricks"></i>,
+            heading: 'Product 1',
+            description: 'This is a description of product 2. This is a description of product 2.This is a description.',
+
+            longDescription: ' This is a more detailed description of Product 1. It includes sThis is a more detailed description of Product 1. It includes more information about the features and benefitsThis is a more detailed description of Product 1. It includes more information about the features and benefitsThis is a more detailed description of Product 1. It includes more information about the features and benefits.',
+            keyPoints: ['Point 1', 'Point 2', 'Point 3','Point 1', 'Point 2', 'Point 3','Point 1'],
             images: ['image1.jpg', 'image2.jpg']
         },
-        { 
-            icon: <i className="bi bi-bricks"></i>, 
-            heading: 'Product 2', 
-            description: 'This is a description of product 2.',
+        {
+            icon: <i className="bi bi-bricks"></i>,
+            heading: 'Product 2',
+            description: 'This is a description of product 2. This is a description of product 2.This is a description.',
             longDescription: 'This is a more detailed description of Product 2. It includes more information about the features and benefits.',
             keyPoints: ['Point 1', 'Point 2', 'Point 3'],
             images: ['image1.jpg', 'image2.jpg']
         },
-        { 
-            icon: <i className="bi bi-bricks"></i>, 
-            heading: 'Product 3', 
-            description: 'This is a description of product 3.',
+        {
+            icon: <i className="bi bi-bricks"></i>,
+            heading: 'Product 3',
+            description: 'This is a description of product 2. This is a description of product 2.This is a description.',
+
             longDescription: 'This is a more detailed description of Product 3. It includes more information about the features and benefits.',
             keyPoints: ['Point 1', 'Point 2', 'Point 3'],
             images: ['image1.jpg', 'image2.jpg']
         },
-        { 
-            icon: <i className="bi bi-bricks"></i>, 
-            heading: 'Product 4', 
-            description: 'This is a description of product 4.',
+        {
+            icon: <i className="bi bi-bricks"></i>,
+            heading: 'Product 4',
+            description: 'This is a description of product 2. This is a description of product 2.This is a description.',
+
             longDescription: 'This is a more detailed description of Product 4. It includes more information about the features and benefits.',
             keyPoints: ['Point 1', 'Point 2', 'Point 3'],
             images: ['image1.jpg', 'image2.jpg']
         },
-        { 
-            icon: <i className="bi bi-bricks"></i>, 
-            heading: 'Product 5', 
-            description: 'This is a description of product 5.',
+        {
+            icon: <i className="bi bi-bricks"></i>,
+            heading: 'Product 5',
+            description: 'This is a description of product 2. This is a description of product 2.This is a description.',
+
             longDescription: 'This is a more detailed description of Product 5. It includes more information about the features and benefits.',
             keyPoints: ['Point 1', 'Point 2', 'Point 3'],
             images: ['image1.jpg', 'image2.jpg']
         },
-        { 
-            icon: <i className="bi bi-bricks"></i>, 
-            heading: 'Product 6', 
-            description: 'This is a description of product 6.',
+        {
+            icon: <i className="bi bi-bricks"></i>,
+            heading: 'Product 6',
+            description: 'This is a description of product 2. This is a description of product 2.This is a description.',
+
             longDescription: 'This is a more detailed description of Product 6. It includes more information about the features and benefits.',
             keyPoints: ['Point 1', 'Point 2', 'Point 3'],
             images: ['image1.jpg', 'image2.jpg']
         },
-     
+
     ];
 
     const handleSeeMore = (product) => {
@@ -68,19 +73,23 @@ export default function Product() {
 
     return (
         <div className="product-container">
-            <h1>A Complete Solution for AI SaaS Startups</h1>
-            <p>Explore the key features of our AI tool, designed to provide everything AI SaaS startups need to thrive.</p>
-            
-             <div className="productDiv">
-            {products.map((product, index) => (
-                <div className="product-card" key={index}>
-                    <div className="icon">{product.icon}</div>
-                    <h3>{product.heading}</h3>
-                    <p>{product.description}</p>
-                    <button className="see-more-btn" onClick={() => handleSeeMore(product)}>See More</button>
-                </div>
-            ))}
-</div>
+            <h1 className='sub-title'>A Complete Solution for AI SaaS Startups</h1>
+            <p className='pra'>Explore the key features of our AI tool,  AI SaaS startups need to thrive.</p>
+
+            <div className="productDiv">
+                {products.map((product, index) => (
+                    <div className="product-card" key={index}>
+                        <div className="icon-wrapper">
+                            <div className="overlay"></div>
+                            <div className="icon">{product.icon}</div>
+                        </div>
+                        <h3>{product.heading}</h3>
+                        <p>{product.description}</p>
+                        <button className="see-more-btn" onClick={() => handleSeeMore(product)}>See More</button>
+                    </div>
+                ))}
+            </div>
+
             {selectedProduct && (
                 <div className="popup-overlay " onClick={handleClosePopup}>
                     <div className="popup" onClick={(e) => e.stopPropagation()}>

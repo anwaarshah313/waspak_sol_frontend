@@ -1,14 +1,26 @@
-/* .main {
+.main {
+    position: relative;
+    
+}
 
-    height: 100vh;
-    min-height: 620px;
-    max-height: 900px;
-    text-align: center;
-} */
-
+.main::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px; /* Height of the border */
+    background: linear-gradient(to right, 
+                                transparent 10%, 
+                                #6a0dad 50%, 
+                                transparent 90%);
+    border-radius: 50px; /* Rounded edges */
+}
 
 .textDiv {
-    background-image: linear-gradient(16deg, #2200ff11 7.54%, rgba(0, 0, 0, 0.732) 29.76%), url(../../../../public/images/hero_background.webp);
+    --tw-bg-opacity: 1;
+   
+    background-image: linear-gradient(16deg,  rgb(3 0 20 / var(--tw-bg-opacity)) 7.54%,  rgb(3 0 30 / var(--tw-bg-opacity)) 29.76%);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -38,15 +50,18 @@
 }
 
 .button {
-    background: linear-gradient(180deg, #051225,  #00060f 60%, #051225);
+    margin-top: 14px;
+    background: linear-gradient(180deg, hsla(0, 0%, 100%, .029), hsla(0, 0%, 100%, .06) 50%, hsla(0, 0%, 100%, 0));
+
     color: rgb(255, 255, 255);
     padding: 10px 13px;
     font-size: 14px;
     font-weight: 500;
     cursor: pointer;
-    border: 1px solid transparent;
-    border-image: linear-gradient(to left, #051225 , #ffffff2b) 1;
-    border-radius:0px;
+     border: 1px solid #ffffff30; 
+    --tw-shadow: inset 0px -6px 15px rgba(156, 178, 255, .25), inset 0px 6px 15px rgba(229, 156, 255, .25);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    border-radius:6px;
     transition: all 0.5s ease;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
 
@@ -54,11 +69,11 @@
 
 .button:hover {
     padding: 10px 25px;
-    background: linear-gradient(180deg, #051225,  #00060f 60%, #051225);
-    border: 1px solid transparent;
-    border-image: linear-gradient(to left, #ffffff2b, #051225) 1;
-    border-radius: 0px;
-    color: rgb(255, 255, 255);
+    background: linear-gradient(180deg, hsla(0, 0%, 100%, .029), hsla(0, 0%, 100%, .06) 50%, hsla(0, 0%, 100%, 0));
+
+    border: 1px solid #ffffff30; 
+    --tw-shadow: inset 0px -6px 15px rgba(156, 178, 255, .25), inset 0px 6px 15px rgba(229, 156, 255, .25);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 
 }
 

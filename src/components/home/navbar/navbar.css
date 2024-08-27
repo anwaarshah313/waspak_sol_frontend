@@ -1,12 +1,13 @@
 .header {
-    /* background-color: aquamarine; */
+    /* background-color: rgb(22, 26, 25); */
     width: 100%;
     display: flex;
     justify-content: center;
     text-align: center;
     /* padding: 0px 60px; */
     height: 68px;
-    background-color:#00060f;
+    --tw-bg-opacity: 1;
+    background-color: rgb(3 0 20 / var(--tw-bg-opacity));
 }
 
 .nav {
@@ -31,22 +32,24 @@
 .nav ul li a{
     /* background-color: blue; */
     /* border-bottom: 1px solid white; */
-    padding: 8px 0px;
-    margin: 0px 16px;
-    color: white ;
+    padding: 6px 0px;
+    margin: 0px 12px;
+    --tw-text-opacity: 1;
+    color: rgb(145 142 160 / var(--tw-text-opacity));
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
 }
 
 .nav ul li a.active {
-    border-bottom: 2px solid white;
-    color: white; /* This changes the text color if needed */
+    border-bottom: 2px solid  rgb(145 142 460 / var(--tw-text-opacity));
+    --tw-text-opacity: 1;
+    color: rgb(145 142 160 / var(--tw-text-opacity));
 }
 
 .logo{
     color: white;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
 }
 
