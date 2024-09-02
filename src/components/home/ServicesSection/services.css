@@ -1,26 +1,23 @@
-.product-container {
+.services-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-   align-items: center;
-   text-align: center;
-   --tw-bg-opacity: 1;
-   background-color: rgb(3 0 20 / var(--tw-bg-opacity));
+    align-items: center;
+    text-align: center;
+    --tw-bg-opacity: 1;
+    background-color: rgb(3 0 20 / var(--tw-bg-opacity));
 }
-.productDiv{
+.servicesDiv{
     width: calc(100% - 100px);
     max-width: 1400px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 4 cards per row on large screens */
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row on large screens */
     gap: 20px;
     margin: 100px 0;
-    margin-bottom: 60px !important;
     margin-top: 40px !important;
-    /* backgroud-color: #9d3838; */
 }
 
-
-.product-card {
+.services-card {
     --tw-bg-opacity: 1;
     background: linear-gradient(to bottom, rgb(3 0 20 / var(--tw-bg-opacity)), #ffffff07);
     border: 1px solid transparent;
@@ -32,15 +29,8 @@
     transition: all 0.3s ease-in-out;
 }
 
-/* .product-card:hover{
-    background: linear-gradient(to bottom,#ffffff08 , #051225);
-    border: 1px solid transparent;
-    border-image: linear-gradient(to bottom,#051225, #ffffff10) 1;
-} */
-
 .sub-title{
     color: white;
-    /* background-color: aqua; */
     margin-top: 100px !important;
     margin-bottom: 20px !important;
     margin: 0px;
@@ -48,46 +38,10 @@
     font-weight: 700;
 }
 .pra{
- 
- /* background-color: blue; */
     color: white;
     margin: 0px;
     font-size: 12px;
 }
-
-.icon-wrapper {
-    position: relative;
-    display: inline-block; /* Ensure the wrapper fits the icon's content */
-
-}
-
-.overlay {
-    position: absolute;
-    top: 0px; /* Adjust as needed */
-    left: 0px; /* Adjust as needed */
-    right: 0px; /* Adjust as needed */
-    bottom: 12px; /* Adjust as needed */
-    background: linear-gradient(to bottom, #ffffff09, rgb(3 0 20 / var(--tw-bg-opacity)));
-    --tw-bg-opacity: 1;
-    border-radius: 50px;
-    z-index: 1; /* Ensure it's behind the icon */
-
-}
-
-.icon {
-    background: linear-gradient(180deg, hsla(0, 0%, 100%, .029), hsla(0, 0%, 100%, .06) 50%, hsla(0, 0%, 100%, 0));
-
-    width: fit-content;
-    text-align: center;
-    font-size: 30px;
-    margin-bottom: 15px;
-    padding: 8px 26px;
-    padding-bottom: 10px !important;
-    border-radius: 50px;
-    position: relative;
-
-}
-
 
 h3 {
     font-size: 20px;
@@ -102,9 +56,12 @@ p {
     margin-bottom: 20px !important;
     --tw-text-opacity: 1;
     color: rgb(145 142 160 / var(--tw-text-opacity));
-
 }
-
+.buttonOutDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
 .see-more-btn {
     background: linear-gradient(180deg, hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, 0));
     border: 1px solid #ffffff30; 
@@ -117,14 +74,17 @@ p {
     transition: background-color 0.2s ease-in-out;
     --tw-shadow: inset 0px -6px 15px rgba(156, 178, 255, .25), inset 0px 6px 15px rgba(229, 156, 255, .25);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    margin-right: 10px;
+    display: inline-block;
 }
-
 
 .see-more-btn:hover {
     border: 1px solid #ffffff50; 
     color: #fff;
     box-shadow: inset 0 -6px 17px rgba(156, 178, 255, .3), inset 0 6px 17px rgba(229, 156, 255, .3);
-
+}
+.github-btn{
+    color: rgba(255, 255, 255, 0.481);
 }
 
 /* Styles for the popup */
@@ -153,12 +113,11 @@ p {
     position: relative;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     text-align: left;
-    backdrop-filter: blur(20px); /* Add blur effect to the background */
+    backdrop-filter: blur(20px);
     background: transparent;
     color: white;
     box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.233);
 }
-
 
 .close-btn {
     position: absolute;
@@ -182,22 +141,18 @@ h2 {
     margin-top: 10px;
 }
 
-/* Disable scrolling on the background when the popup is open */
 body.modal-open {
     overflow: hidden;
 }
 
-
-
-
 @media (max-width: 1024px) {
-    .productDiv {
+    .servicesDiv {
         grid-template-columns: repeat(2, 1fr); /* 2 cards per row on medium screens */
     }
 }
 
 @media (max-width: 600px) {
-    .productDiv {
+    .servicesDiv {
         grid-template-columns: 1fr; /* 1 card per row on small screens */
     }
 }

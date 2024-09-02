@@ -5,9 +5,30 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --tw-bg-opacity: 1;
+  background-color: rgb(3 0 20 / var(--tw-bg-opacity));
+  color: white;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+/* Targets the scrollbar itself */
+::-webkit-scrollbar {
+  width: 6px; /* width of the entire scrollbar */
+}
+
+/* Targets the draggable part of the scrollbar */
+::-webkit-scrollbar-thumb {
+  --tw-bg-opacity: 1;
+  background-color: rgb(3 0 20 / var(--tw-bg-opacity)); /* color of the draggable part */
+  border-radius: 10px; /* roundness of the draggable part */
+  border: 3px solid #6a0dad; /* creates a border around the draggable part */
+}
+
+/* Targets the part of the scrollbar track where the thumb is not present */
+::-webkit-scrollbar-track {
+  background: #e5e5e573; /* color of the track */
+  border-radius: 10px; /* roundness of the track */
 }
