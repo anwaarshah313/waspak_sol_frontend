@@ -45,11 +45,8 @@
 .carousel {
     border-radius: 16px;
     -webkit-user-select: none;
-    /* Chrome, Safari, Opera */
     -moz-user-select: none;
-    /* Firefox */
     -ms-user-select: none;
-    /* Internet Explorer/Edge */
     user-select: none;
     --tw-bg-opacity: 1;
     background-image: linear-gradient(16deg, rgb(3 0 20 / var(--tw-bg-opacity)) 7.54%, rgb(3 0 30 / var(--tw-bg-opacity)) 29.76%);
