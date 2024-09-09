@@ -3,6 +3,10 @@
     
 }
 
+.class{
+    border: 1px;
+}
+
 .main::after {
     content: '';
     position: absolute;
