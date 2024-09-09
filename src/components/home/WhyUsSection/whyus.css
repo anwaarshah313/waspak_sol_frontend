@@ -1,0 +1,131 @@
+.mainDiv {
+    --tw-bg-opacity: 1;
+    background-attachment: fixed;
+    background-image: linear-gradient(16deg,  rgb(2 0 50 / var(--tw-bg-opacity)) 7.54%,  rgb(3 0 30 / var(--tw-bg-opacity)) 29.76%);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+   padding: 100px 0px;
+}
+
+.inDiv {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    /* background-color: rgb(14, 177, 123); */
+    width: calc(100% - 100px);
+    max-width: 1400px;
+    align-items: center;
+}
+
+.leftDiv {
+    /* background-color: brown; */
+    height: 100%;
+    text-align: left;
+    padding: 0px 00px;
+}
+
+.leftDiv h1 {
+    margin: 0px;
+    /* background-color: rgb(40, 56, 56) !important; */
+    color: white;
+    font-size: 54.334px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 70px;
+}
+
+.leftDiv p {
+    margin-top: 20px !important;
+    margin: 0px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.carousel {
+    border-radius: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    --tw-bg-opacity: 1;
+    background-image: linear-gradient(16deg, rgb(3 0 20 / var(--tw-bg-opacity)) 7.54%, rgb(3 0 30 / var(--tw-bg-opacity)) 29.76%);
+    --tw-shadow: inset 0px -6px 8px rgba(156, 178, 255, .15), inset 0px 6px 8px rgba(229, 156, 255, .15);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+
+}
+
+
+.slide {
+    /* background-color: brown; */
+    /* height: 300px; */
+    /* padding: 20px; */
+}
+
+.dummy-wrapper {
+    /* margin-top: 20px; */
+    /* background-color: aqua; */
+    position: relative;
+    display: inline-block;
+    /* Ensure the wrapper fits the icon's content */
+
+}
+
+.dummy-overlay {
+    position: absolute;
+    top: 0px;
+    /* Adjust as needed */
+    left: 0px;
+    /* Adjust as needed */
+    right: 0px;
+    /* Adjust as needed */
+    bottom: 12px;
+    /* Adjust as needed */
+    background: linear-gradient(to bottom, #ffffff09, rgb(3 0 20 / var(--tw-bg-opacity)));
+    --tw-bg-opacity: 1;
+    border-radius: 50px;
+    z-index: 1;
+    /* Ensure it's behind the icon */
+
+}
+
+.dummy-icon {
+    background: linear-gradient(180deg, hsla(0, 0%, 100%, .029), hsla(0, 0%, 100%, .06) 50%, hsla(0, 0%, 100%, 0));
+    width: fit-content;
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 15px;
+    padding: 8px 32px;
+    padding-bottom: 10px !important;
+    border-radius: 50px;
+    position: relative;
+
+}
+.card-name{
+    font-size: 20px;
+    margin: 0px;
+    margin-top: 10px !important;
+}
+
+.card-pra{
+    font-size: 12px;
+    line-height: 22px;
+
+    --tw-text-opacity: 1;
+    color: rgb(145 142 160 / var(--tw-text-opacity));
+}
+
+
+@media (max-width: 1024px) {
+    .inDiv {
+        grid-template-columns: 50% 50%;
+
+    }
+}
+
+@media (max-width: 600px) {
+    .inDiv {
+        grid-template-columns: 100%;
+
+    }
+}
