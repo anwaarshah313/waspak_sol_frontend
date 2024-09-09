@@ -1,0 +1,59 @@
+.item1 {
+  grid-area: header;
+}
+body{
+  background-color: rgb(3 0 20 / var(--tw-bg-opacity));
+}
+.item2 {
+  grid-area: menu;
+  position: relative;
+  overflow: hidden;
+}
+
+.item3 {
+  grid-area: main;
+  position: relative;
+  overflow: hidden;
+}
+
+.item4 {
+  grid-area: right;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    
+  ;
+
+
+  padding: 30px;
+}
+
+.grid-container>div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 20px;
+}
+
+.item2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.item3 img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  display: block;
+  border-radius: 240px 240px 0px 0px;
+  position: relative;
+  top: 10px;
+  left: 20px;
+  background-image: url("https://tse3.mm.bing.net/th?id=OIP.vWlBtx2fatP5K5a0rjUakQHaE8&pid=Api&P=0&h=220")
+}
