@@ -44,7 +44,7 @@ const WhyUs = ({ data }) => {
                 <div className='leftDiv' >
                     <h1> Building Future AI</h1>
                     <p>Idrak embodies the belief that the
-                        <br />integration of technology.
+                        integration of technology.
                     </p>
                 </div>
                 <Carousel

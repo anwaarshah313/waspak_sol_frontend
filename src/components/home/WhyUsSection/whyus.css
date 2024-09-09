@@ -1,7 +1,10 @@
 .mainDiv {
-    --tw-bg-opacity: 1;
+    --tw-bg-opacity: 0.5;
     background-attachment: fixed;
-    background-image: linear-gradient(16deg,  rgb(2 0 50 / var(--tw-bg-opacity)) 7.54%,  rgb(3 0 30 / var(--tw-bg-opacity)) 29.76%);
+    background-image: linear-gradient(16deg,  
+    rgba(2, 0, 50, var(--tw-bg-opacity)) 7.54%, /* Use rgba with variable opacity */
+    rgba(3, 0, 30, var(--tw-bg-opacity)) 29.76%  /* Use rgba with variable opacity */
+    );
     text-align: center;
     display: flex;
     justify-content: center;
@@ -39,7 +42,7 @@
     margin: 0px;
     font-size: 32px;
     font-weight: 700;
-    line-height: 30px;
+    line-height: 40px;
 }
 
 .carousel {
@@ -49,7 +52,7 @@
     -ms-user-select: none;
     user-select: none;
     --tw-bg-opacity: 1;
-    background-image: linear-gradient(16deg, rgb(3 0 20 / var(--tw-bg-opacity)) 7.54%, rgb(3 0 30 / var(--tw-bg-opacity)) 29.76%);
+    background-image: linear-gradient(16deg, rgb(3 0 60 / var(--tw-bg-opacity)) 7.54%, rgb(3 0 30 / var(--tw-bg-opacity)) 29.76%);
     --tw-shadow: inset 0px -6px 8px rgba(156, 178, 255, .15), inset 0px 6px 8px rgba(229, 156, 255, .15);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 
@@ -123,9 +126,62 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .inDiv {
         grid-template-columns: 100%;
 
     }
+
+   
+
 }
+
+@media (max-width: 500px) {
+   
+
+    .leftDiv h1 {
+        margin: 0px;
+        /* background-color: rgb(40, 56, 56) !important; */
+        color: white;
+        font-size: 24.334px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        line-height: 34px;
+        width: 90%;
+    }
+    
+    .leftDiv p {
+        margin-top: 10px !important;
+        margin: 0px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        width: 90%;
+        margin-bottom: 40px !important;
+    }
+
+}
+
+    
+    @media (min-width: 501px) and (max-width: 1026px) {
+        .leftDiv h1 {
+            margin: 0px;
+            /* background-color: rgb(40, 56, 56) !important; */
+            color: white;
+            font-size: 34.334px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            line-height: 50px;
+            width: 90%;
+        }
+        
+        .leftDiv p {
+            margin-top: 10px !important;
+            margin: 0px;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 34px;
+            width: 90%;
+            
+        }
+      }

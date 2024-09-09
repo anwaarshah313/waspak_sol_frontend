@@ -3,7 +3,10 @@
 .itemDiv{
     /* background-color: brown; */   --tw-bg-opacity: 1;
     /* background-attachment: fixed; */
-    background-image: linear-gradient(16deg,  rgb(2 0 50 / var(--tw-bg-opacity)) 7.54%,  rgb(3 0 30 / var(--tw-bg-opacity)) 29.76%);
+    background-image: linear-gradient(16deg, 
+    rgba(2, 0, 50, 0.5) 7.54%,  /* 50% opacity */
+    rgba(3, 0, 30, 0.5) 29.76%   /* 50% opacity */
+    );
    display: grid;
    place-items: center;
    padding: 30px 0px;
@@ -23,10 +26,11 @@
 }
 .card-in{
     --tw-bg-opacity: 1;
-    background: linear-gradient(to bottom, rgb(3 0 20 / var(--tw-bg-opacity)), #ffffff07);
+    background: linear-gradient(to bottom, rgb(3 0 40 / var(--tw-bg-opacity)), #ffffff10);
     border: 1px solid transparent;
     border-image: linear-gradient(to bottom, #ffffff07,  rgb(3 0 20 / var(--tw-bg-opacity))) 1;
     color: white;
+    border-radius: 8px;
     padding: 24px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 40%;

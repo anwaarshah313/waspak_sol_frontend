@@ -22,9 +22,12 @@
 }
 
 .textDiv {
-    --tw-bg-opacity: 1;
+    --tw-bg-opacity: 0.5;
     background-attachment: fixed;
-    background-image: linear-gradient(16deg,  rgb(3 0 20 / var(--tw-bg-opacity)) 7.54%,  rgb(3 0 30 / var(--tw-bg-opacity)) 29.76%);
+    background-image: linear-gradient(16deg,  
+    rgba(3, 0, 20, var(--tw-bg-opacity)) 7.54%, /* Use rgba with variable opacity */
+    rgba(3, 0, 30, var(--tw-bg-opacity)) 29.76% 
+    );
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -50,7 +53,8 @@
     margin-bottom: 40px;
     font-size: 18px;
     font-weight: 400;
-
+width: 80%;
+max-width: calc(1000px - 100px);
 }
 
 .button {
@@ -86,3 +90,42 @@
     padding-right: 10px;
     transition: all 0.3s ease;
 }
+
+@media (max-width: 526px) {
+
+
+    .textDiv h1 {
+        color: white;
+        font-size: 24.334px;
+        font-weight: 700;
+        line-height: 36px;
+    }
+    
+    .textDiv p {
+        color: white;
+        margin-bottom: 32px;
+        font-size: 12px;
+        font-weight: 300;
+    
+    }
+    
+    
+}
+
+@media (min-width: 528px) and (max-width: 826px) {
+    .textDiv h1 {
+        color: white;
+        font-size: 34.334px;
+        font-weight: 700;
+        line-height: 46px;
+    }
+    
+    .textDiv p {
+        color: white;
+        margin-bottom: 32px;
+        font-size: 14px;
+        font-weight: 300;
+    
+    }
+  }
+  

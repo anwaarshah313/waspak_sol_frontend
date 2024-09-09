@@ -4,7 +4,7 @@
     justify-content: center;
    align-items: center;
    text-align: center;
-   --tw-bg-opacity: 1;
+   --tw-bg-opacity: 0.5;
    background-color: rgb(3 0 20 / var(--tw-bg-opacity));
 }
 .productDiv{
@@ -22,7 +22,7 @@
 
 .product-card {
     --tw-bg-opacity: 1;
-    background: linear-gradient(to bottom, rgb(3 0 20 / var(--tw-bg-opacity)), #ffffff07);
+    background: linear-gradient(to bottom, rgb(3 0 40 / var(--tw-bg-opacity)), #ffffff10);
     border: 1px solid transparent;
     border-image: linear-gradient(to bottom, #ffffff07,  rgb(3 0 20 / var(--tw-bg-opacity))) 1;
     color: white;
@@ -55,45 +55,28 @@
     font-size: 12px;
 }
 
-.icon-wrapper {
-    position: relative;
-    display: inline-block; /* Ensure the wrapper fits the icon's content */
+.product-icon-wrapper{
+display: flex;
+justify-content: space-between;
+/* background-color: rgb(124, 122, 119); */
+margin-bottom: 14px;
 
 }
 
-.overlay {
-    position: absolute;
-    top: 0px; /* Adjust as needed */
-    left: 0px; /* Adjust as needed */
-    right: 0px; /* Adjust as needed */
-    bottom: 12px; /* Adjust as needed */
-    background: linear-gradient(to bottom, #ffffff09, rgb(3 0 20 / var(--tw-bg-opacity)));
-    --tw-bg-opacity: 1;
-    border-radius: 50px;
-    z-index: 1; /* Ensure it's behind the icon */
-
+.product-icon-wrapper h3 {
+    font-size: 20px;
+    margin: 0px !important;
+    /* margin-top: 10px !important; */
 }
-
-.icon {
-    background: linear-gradient(180deg, hsla(0, 0%, 100%, .029), hsla(0, 0%, 100%, .06) 50%, hsla(0, 0%, 100%, 0));
-
+.product-icon {
     width: fit-content;
     text-align: center;
     font-size: 30px;
-    margin-bottom: 15px;
-    padding: 8px 26px;
-    padding-bottom: 10px !important;
-    border-radius: 50px;
-    position: relative;
-
+opacity: 0.8;
 }
 
 
-h3 {
-    font-size: 20px;
-    margin: 0px;
-    margin-top: 10px !important;
-}
+
 
 p {
     font-size: 12px;
@@ -212,3 +195,50 @@ top: 3px;
 border-radius: 2px 2px;
 
 }
+@media (max-width: 526px) {
+.sub-title{
+    color: white;
+    /* background-color: aqua; */
+    margin-top: 100px !important;
+    margin-bottom: 20px !important;
+    margin: 0px;
+    font-size: 26px;
+    font-weight: 600;
+    width: 90%;
+}
+.pra{
+ 
+ /* background-color: blue; */
+    color: white;
+    margin: 0px;
+    font-size: 12px;
+    width: 90%;
+}
+
+    
+  
+    
+}
+
+@media (min-width: 528px) and (max-width: 826px) {
+    .sub-title{
+        color: white;
+        /* background-color: aqua; */
+        margin-top: 100px !important;
+        margin-bottom: 20px !important;
+        margin: 0px;
+        font-size: 29px;
+        font-weight: 600;
+        width: 90%;
+    }
+    .pra{
+     
+     /* background-color: blue; */
+        color: white;
+        margin: 0px;
+        font-size: 13px;
+        width: 90%;
+    }
+    
+
+  }

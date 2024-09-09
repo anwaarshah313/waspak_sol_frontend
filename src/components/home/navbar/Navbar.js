@@ -14,7 +14,7 @@ export default function Navbar() {
         <header className='header'>
             <nav className="nav">
                 <div className="logo">ROAMEAZY</div>
-                <div className="main">
+                <div className="">
                     <ul className={isopen ? "nav-link active" : "nav-link"}>
                         <li>
                             <Link
@@ -52,11 +52,14 @@ export default function Navbar() {
                             Contact  Us
                             </Link>
                         </li>
+                       
                     </ul>
                 </div>
-                <button onClick={toggle} className="navbar-toggler">
-                    ☰
+                <button onClick={toggle} className="navbar-toggler btn">
+                    {isopen ? "X" :  "☰"}
+                   
                 </button>
+              
             </nav>
         </header>
     );

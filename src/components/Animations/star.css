@@ -1,0 +1,39 @@
+.stars-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -2; /* Behind everything else */
+  }
+  
+  .star {
+    position: absolute;
+    width: 2px;
+    height: 8px;
+    background: #ffffff;
+    border-radius: 20%;
+    opacity: 1;
+    animation: moveUp 3s linear infinite;
+    box-shadow: 100px 30px 10px rgba(255, 255, 255, 0.1); /* Outer glow effect */
+  }
+  
+  @keyframes moveUp {
+    0% {
+      transform: translateY(100vh);
+    }
+    100% {
+      transform: translateY(-10vh);
+    }
+  }
+  
+  /* Control animation state */
+  .stars-container.animate .star {
+    animation-play-state: running;
+  }
+  
+  .stars-container.paused .star {
+    animation-play-state: paused;
+  }
+  
