@@ -5,6 +5,8 @@ import About from './components/about/About';
 
 
 
+
+
 function App() {
   return (
     
@@ -15,6 +17,7 @@ function App() {
        <Route path="/about" element={<About/>} />
       {/*    <Route path="*" element={<NotFound />} /> */}
       </Routes>
+    
 
     </BrowserRouter>
   );
