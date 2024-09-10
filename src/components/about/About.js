@@ -14,62 +14,42 @@ const Act = () => {
 
 
   return (
+    <>
+      <div className='about-main'>
+        <div className='about-in'>
 
-    <div class="grid-container">
-      <div class="item1">
-
-
-        <h6 >About our portfolio</h6>
-        <br />
-        <h1 style={{ color: 'red' }} >        {texts[textIndex]}
-        </h1>
-        <h1>Hi,I'm Tajir Ai!</h1>
-        <br />
-        <p> <b>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde reiciendis cum asperiores, ad optio deleniti pariatur veniam expedita sed tempora facilis exercitationem rerum magnam, temporibus, maxime eveniet a quaerat earum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro enim consequuntur repudiandae libero reprehenderit nam molestias in veritatis quia nihil, vitae dolore corrupti blanditiis reiciendis accusamus, suscipit quos.  Voluptatum, eaque!</b> <br /> </p>
-        <br />
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat facilis harum, excepturi debitis ipsam iusto ullam sequi animi ipsa necessitatibus, maxime et delectus possimus. Rem consectetur iusto dolorum aut voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea vitae architecto impedit eligendi quaerat ullam sequi cum, saepe beatae quo, nisi facere quisquam ipsum odit possimus inventore voluptatem? Impedit, sunt.</p>
-        <br />
+          <div className='oneDiv'>
+            <h1 >
+              {texts[textIndex]}
+            </h1>
+            <p>TajirAI is an industry-leading custom software development company offering software solutions ranging from web app development to ML, NLP and LLM  based applications. As a cutting-edge software development company, we highly focus on client satisfaction and product quality while managing project deadlines effectively.</p>
+          </div>
+        </div>
       </div>
 
-      <div class="item2">
-        <img src="https://tse3.mm.bing.net/th?id=OIP.vWlBtx2fatP5K5a0rjUakQHaE8&pid=Api&P=0&h=220" class="img-fluid rounded-start" alt="..." />
+      <div className='about-main-two'>
+          <div className='wrapperDiv'>
+          <video className='backgroundVideo' autoPlay muted loop>
+                <source src="/images/about-animation.m4v" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+        <div className='about-in'>
+            <div className='twoDiv'>
+             
+              <div className='twoInDiv'>
+                <h1>Connection is everything</h1>
+                <p>With expertise in multiple domains, such as developing Dashboards for monitoring  and artificial intelligence-based projects, our client base spans analytic software for bot, Customer sales analysis, LLM based bots for specific business use cases, web automation and scrapping tools and many more.
+<br/>
+<br/>
+We want to help our clients grow their businesses by providing software solutions based on the latest technologies.</p>
+              </div>
+            </div>
+          </div>
 
-      </div>
-      <div class="item3">
-        <img src="https://tse4.mm.bing.net/th?id=OIP.l4rb5K4jy5iun7Osa_VBagHaE8&pid=Api&P=0&h=220" className="rounded-top-circle hum" alt="..." />
-      </div>
-
-      <div class="item4">
-        <span class="border border-0">
-          <h6>Tell me about your self </h6>
-          <br />
-          <h1>Connection is everthing</h1>
-
-        </span>
-        <hr />
-
-        <span class="border border-0">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat impedit atque rerum optio, necessitatibus autem assumenda velit incidunt dignissimos odit. Aliquid sint nisi provident, similique laborum labore? Temporibus, cum unde. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore cum alias nihil temporibus quaerat, ea vero optio odit provident repudiandae eius doloremque ex, suscipit repellendus tempora maiores aspernatur eaque error! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, ab esse? Itaque iure numquam incidunt, nisi <br /> ab nulla quaerat veritatis saepe tempore soluta! Atque maiores, deserunt quasi necessitatibus vel iure.</p>
-          <h6>
-            Enter
-            <span style={{ fontSize: '30px', verticalAlign: 'middle' }}>
-              &#8594; {/* Right Arrow */}
-            </span>
-          </h6>
-        </span>
-
-
+        </div>
       </div>
 
-
-    </div>
-
-
-
-
-
-
-
+    </>
   )
 }
 

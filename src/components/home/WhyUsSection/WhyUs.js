@@ -17,24 +17,39 @@ const CustomRightArrow = ({ onClick }) => (
 
 const testimonialData = [
   {
-    profilePic: "https://via.placeholder.com/150",
-    name: "John Doe",
-    work: "Software Developer",
+    profilePic: "/images/1.png",
+    name: "+200%",
+    work: "Growth Potential",
   },
   {
-    profilePic: "https://via.placeholder.com/150",
-    name: "Jane Smith",
-    work: "Product Manager",
+    profilePic: "/images/2.png",
+    name: "50%",
+    work: "Operational Cost Reduction",
   },
   {
-    profilePic: "https://via.placeholder.com/150",
-    name: "Alice Johnson",
-    work: "UI/UX Designer",
+    profilePic: "/images/3.png",
+    name: "24/7",
+    work: "Availability",
   },
   {
-    profilePic: "https://via.placeholder.com/150",
-    name: "Mike Brown",
-    work: "Data Scientist",
+    profilePic: "/images/4.png",
+    name: "+60%",
+    work: "Data-Driven Decisions",
+  },
+  {
+    profilePic: "/images/5.png",
+    name: "90%",
+    work: "Customer Satisfaction",
+  },
+  {
+    profilePic: "/images/6.png",
+    name: "-50%",
+    work: "Manual Work",
+  },
+  {
+    profilePic: "/images/7.png",
+    name: "95%",
+    work: "Precision and Accuracy",
   }
 ];
 
@@ -70,7 +85,7 @@ const WhyUs = () => {
 
           <div className='leftDiv'>
             <h1>Building Future AI</h1>
-            <p>Idrak embodies the belief that the integration of technology.</p>
+            <p>TajirAI embodies the belief that the integration of technology.</p>
           </div>
           <div className="whyUs-out">
             <Carousel

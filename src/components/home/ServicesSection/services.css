@@ -27,6 +27,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
     transition: all 0.3s ease-in-out;
+    position: relative;
 }
 
 
@@ -37,11 +38,11 @@ h3 {
     margin-top: 10px !important;
 }
 
-p {
+.services-card p {
     font-size: 12px;
     line-height: 22px;
     margin: 10px 0px;
-    margin-bottom: 20px !important;
+    margin-bottom: 50px !important;
     --tw-text-opacity: 1;
     color: rgb(145 142 160 / var(--tw-text-opacity));
 }
@@ -49,6 +50,9 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: end;
+    position: absolute;
+    bottom: 26px;
+    width: calc(100% - 50px);
 }
 .see-more-btn {
     background: linear-gradient(180deg, hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, 0));

@@ -51,8 +51,9 @@
 
 .logo{
     color: white;
-  font-size: 24px;
-  font-weight: 700;
+ scale: 0.5;
+ /* background-color: aqua; */
+ margin-left: -60px;
 }
 
 
@@ -93,6 +94,11 @@
         position:fixed;
         z-index: 99;
     }
+    .logo{
+       scale: 0.4;
+     margin-left: -80px;
+    }
+    
     
     .nav {
         width: 90% ;

@@ -17,28 +17,22 @@ const CustomRightArrow = ({ onClick }) => (
 );
 const testimonialData = [
     {
-        profilePic: "https://via.placeholder.com/150",
-        name: "John Doe",
+        profilePic: "/images/T1_1.png",
+        name: "Cyber City",
         work: "Software Developer",
-        description: "John has been a key player in our development team, consistently delivering complex projects on time."
+        description: "In an age where AI companies are a plenty, TajirAI truly stands out. Their products are not just innovative, but they come with a depth of understanding of the real-world challenges businesses face. Callwise has been a game-changer for our customer support. "
     },
     {
-        profilePic: "https://via.placeholder.com/150",
-        name: "Jane Smith",
+        profilePic: "/images/t1.jfif",
+        name: "Netcomm",
         work: "Product Manager",
-        description: "Jane's insights into product development and market trends have significantly boosted our product's success."
+        description: "Our partnership with TajirAI has redefined what we thought was possible with AI. From conversational AI to their advancements in robotics, it's clear that TajirAI isn't just on the cutting edge—they're creating it."
     },
     {
-        profilePic: "https://via.placeholder.com/150",
-        name: "Alice Johnson",
+        profilePic: "/images/T3.png",
+        name: "Prime",
         work: "UI/UX Designer",
-        description: "Alice's designs are always user-centric, ensuring a great user experience and enhancing customer satisfaction."
-    },
-    {
-        profilePic: "https://via.placeholder.com/150",
-        name: "Mike Brown",
-        work: "Data Scientist",
-        description: "Mike has developed innovative solutions using data analytics that have transformed our business strategies."
+        description: "As a startup founder, I've had the pleasure of integrating several TajirAI solutions into our operations. Their commitment to excellence and seamless adaptability to our needs has been exemplary. It's not just AI; it's a brighter future with TajirAI."
     }
 ];
 
@@ -83,10 +77,13 @@ const Testimonials = ({ data }) => {
                     <div key={index} className="card-item">
                         <div key={index} className="card-in">
                             <div className='top-wrapper'>
-                                <img src={item.profilePic} alt={item.name} className="profile-pic" />
+                                <div className='profileDiv'>
+                                    
+                                <img src={item.profilePic} alt={item.name} className="profile" />
+                                </div>
                                 <div className='in-wrapper'>
                                     <h3>{item.name}</h3>
-                                    <p className="work">{item.work}</p>
+                                    {/* <p className="work">{item.work}</p> */}
                                 </div>
                             </div>
                             <p className="description">{item.description}</p>

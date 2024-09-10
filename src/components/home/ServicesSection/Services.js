@@ -6,48 +6,48 @@ export default function Services() {
 
     const products = [
         {
-            heading: 'Product 1',
-            description: 'This is a description of product 1. This is a description of product 1. This is a description.',
+            heading: 'Backend Development',
+            description: 'Working with our back-end developers ensures you will get the most attractive outcomes as our product designers are continually dealing with cutting-edge technologies like Python,.NET,  NodeJS, PHP,  and more that provide state-of-the-art results while saving you development time and money.',
             longDescription: 'This is a more detailed description of Product 1. It includes more information about the features and benefits.',
             keyPoints: ['Point 1', 'Point 2', 'Point 3'],
             images: ['image1.jpg', 'image2.jpg'],
             githubLink: 'https://github.com/product1',
         },
         {
-            heading: 'Product 2',
-            description: 'This is a description of product 2. This is a description of product 2. This is a description.',
+            heading: 'Full Stack Development with AI Integration',
+            description: 'Extend your web applications functionalities with AI at TajirAI. Our team of experienced Full Stack developers helps integrate advanced AI/ML models to enable image recognition, natural language processing, and predictive analytics paving the path for intelligent business operations.',
             longDescription: 'This is a more detailed description of Product 2. It includes more information about the features and benefits.',
             keyPoints: ['Point 1', 'Point 2', 'Point 3'],
             images: ['image1.jpg', 'image2.jpg'],
             githubLink: 'https://github.com/product2',
         },
         {
-            heading: 'Product 2',
-            description: 'This is a description of product 2. This is a description of product 2. This is a description.',
+            heading: 'Front End Development',
+            description: 'Our team of full-stack developers is an expert in designing and curating the front end for applications that drive engagement. The team has an aptitude for all the latest front-end development languages, such as the most recent versions of AngularJS, React, Vue.JS, Ext.JS, ThreeJS and more.',
             longDescription: 'This is a more detailed description of Product 2. It includes more information about the features and benefits.',
             keyPoints: ['Point 1', 'Point 2', 'Point 3'],
             images: ['image1.jpg', 'image2.jpg'],
             githubLink: 'https://github.com/product2',
         },
         {
-            heading: 'Product 2',
-            description: 'This is a description of product 2. This is a description of product 2. This is a description.',
+            heading: 'AI Software Development',
+            description: 'TajirAI expert-level software developers utilize artificial intelligence to automate several front-end processes, such as error-free code generation and nuanced website design mock-ups. Our software specialists program and deploy intelligent predictive modeling to assist back-end developers in building easily scalable systems efficiently, and with AI algorithms, applications are easily customized to recognize and adapt to usage patterns.',
             longDescription: 'This is a more detailed description of Product 2. It includes more information about the features and benefits.',
             keyPoints: ['Point 1', 'Point 2', 'Point 3'],
             images: ['image1.jpg', 'image2.jpg'],
             githubLink: 'https://github.com/product2',
         },
         {
-            heading: 'Product 2',
-            description: 'This is a description of product 2. This is a description of product 2. This is a description.',
+            heading: 'AI Frameworks',
+            description: 'Our software experts leverage advanced artificial intelligence technologies, including LangChain, Ollama, OpenAI, Whisper, TensorFlow, Keras, PyTorch, scikit-learn, Selenium, and BeautifulSoup, to create AI-based solutions, LLM-powered applications, and web automation and web scraping projects. We design and deploy interfaces that streamline data processing, recognize patterns in large datasets, and optimize workflows for data scientists, enhancing the overall efficiency and effectiveness of their work.',
             longDescription: 'This is a more detailed description of Product 2. It includes more information about the features and benefits.',
             keyPoints: ['Point 1', 'Point 2', 'Point 3'],
             images: ['image1.jpg', 'image2.jpg'],
             githubLink: 'https://github.com/product2',
         },
         {
-            heading: 'Product 2',
-            description: 'This is a description of product 2. This is a description of product 2. This is a description.',
+            heading: 'Natural Language Processing Developers',
+            description: 'TajirAI adept software developers create intuitive natural language processing programs to ensure seamless communication between personnel, as well as to provide end-users with an enriching experience during server programming projects. Our expert software developers customize all NLP resources to accurately translate and expediently convey responses to all users.',
             longDescription: 'This is a more detailed description of Product 2. It includes more information about the features and benefits.',
             keyPoints: ['Point 1', 'Point 2', 'Point 3'],
             images: ['image1.jpg', 'image2.jpg'],
@@ -77,8 +77,10 @@ export default function Services() {
                         <h3>{product.heading}</h3>
                         <p>{product.description}</p>
                         <div className='buttonOutDiv'>
-                        <button className="see-more-btn" onClick={() => handleSeeMore(product)}>See More</button>
-                        <a href={product.githubLink} target="_blank" rel="noopener noreferrer" className="github-btn">GitHub</a>
+                        <button className="see-more-btn" 
+                        // onClick={() => handleSeeMore(product)}
+                        >See More</button>
+                        <a href='/' target="_blank" rel="noopener noreferrer" className="github-btn">GitHub</a>
                         </div>
                     </div>
                 ))}
