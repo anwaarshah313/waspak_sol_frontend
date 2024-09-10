@@ -1,32 +1,69 @@
+.main-out {
+    position: relative; 
+    
+  }
+  .main-out::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, black, rgba(255, 255, 255, 0), black);
+    z-index: 7 !important;
+  }
+  
 
+.itemDiv {
+    position: relative; 
+    --tw-bg-opacity: 1;
+    background-attachment: fixed;
+    background-image: url(/public/images/Testimonial-background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    padding: 90px 0px;
+  }
+ 
 
-.itemDiv{
-    /* background-color: brown; */   --tw-bg-opacity: 1;
-    /* background-attachment: fixed; */
-    background-image: linear-gradient(16deg, 
-    rgba(2, 0, 50, 0.5) 7.54%,  /* 50% opacity */
-    rgba(3, 0, 30, 0.5) 29.76%   /* 50% opacity */
-    );
-   display: grid;
-   place-items: center;
-   padding: 30px 0px;
-}
+  .itemDiv::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    --tw-bg-opacity: 0.9;
+    background-color: rgb(3 0 10 / var(--tw-bg-opacity));
+    z-index: 1;
+  }
+  
 
+  .itemDiv > * {
+    position: relative;
+    z-index: 2;
+  }
+  
 .card-item{
     /* background-color: rgb(152, 65, 18); */
+    
     margin-bottom: 40px !important;
     margin: 10px;
-    width: 100%;
+    width: 200%;
     display: flex;
     justify-content: center;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    /* padding: 60px; */
 }
 .card-in{
+    
     --tw-bg-opacity: 1;
-    background: linear-gradient(to bottom, rgb(3 0 40 / var(--tw-bg-opacity)), #ffffff10);
+    background: linear-gradient(to bottom, rgb(3 0 30 / var(--tw-bg-opacity)), #ffffff10);
     border: 1px solid transparent;
     border-image: linear-gradient(to bottom, #ffffff07,  rgb(3 0 20 / var(--tw-bg-opacity))) 1;
     color: white;
@@ -34,26 +71,38 @@
     padding: 24px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 40%;
+    backdrop-filter: blur(100%);
 }
+
+.top-wrapper{
+    /* background-color: rgb(60, 60, 60); */
+    align-items: center;
+    display: flex;
+    column-gap: 20px;
+}
+
+
+
 .carousel-test{
     /* background-color: blue; */
     width: calc(100% - 100px);
     max-width: 1400px;
     padding: 40px 0px;
+   
 
 }
 .arrow {
     position: absolute;
     top: 91%;
-    z-index: 1000;
     cursor: pointer;
     background: none;
     border: none;
     font-size: 24px;
     width: 30px;
     height: 30px;
-    color: #333; /* Customize color */
-    background-color: blueviolet;
+    color: #ffffff6d;
+    background-color: rgba(137, 43, 226, 0.405);
+    z-index: 8 !important;
 }
 
 .arrow.left {
@@ -64,8 +113,8 @@
     right: calc(50% - 32px);
 }
 .profile-pic {
-    width: 100px; /* Adjust size as needed */
-    height: 100px; /* Adjust size as needed */
+    width: 60px; /* Adjust size as needed */
+    height: 60px; /* Adjust size as needed */
     border-radius: 50%; /* Circular image */
     margin-bottom: 10px;
 }
@@ -75,6 +124,38 @@
 }
 
 .work, .description {
-    text-align: center;
+    text-align: left;
     font-size: 14px; /* Adjust font size as needed */
+}
+
+
+@media (max-width: 800px) {
+    .card-item{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-left: 0px;
+    }
+    .card-in{
+        width: 90%;
+
+    }
+    .main-out::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: none;
+        z-index: 7 !important;
+      }
+}
+@media (max-width: 526px) {
+    .carousel-test{
+        width: calc(100% - 50px);
+        max-width: 1400px;
+        padding: 40px 0px;
+    
+    }
 }

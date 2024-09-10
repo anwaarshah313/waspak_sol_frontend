@@ -1,9 +1,7 @@
 .item1 {
   grid-area: header;
 }
-body{
-  background-color: rgb(3 0 20 / var(--tw-bg-opacity));
-}
+
 .item2 {
   grid-area: menu;
   position: relative;

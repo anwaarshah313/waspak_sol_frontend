@@ -1,9 +1,99 @@
+.whyUs-out {
+    position: relative; 
+    
+  }
+  .whyUs-out::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, rgb(0, 0, 0), rgba(255, 255, 255, 0),  rgb(0, 0, 0));
+    z-index: 7 !important;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .why-card-item{
+    margin-bottom: 40px !important;
+    margin: 10px;
+    width: 200%;
+    display: flex;
+    justify-content: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-left: 0px !important ;
+}
+.why-card-in{
+    color: white;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 36%;
+    backdrop-filter: blur(100%);
+}
+
+.why-carousel{ 
+    border-radius: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    --tw-bg-opacity: 1;
+    background-image: linear-gradient(16deg, rgb(3 0 60 / var(--tw-bg-opacity)) 7.54%, rgb(3 0 30 / var(--tw-bg-opacity)) 29.76%);
+    --tw-shadow: inset 0px -6px 8px rgba(156, 178, 255, .15), inset 0px 6px 8px rgba(229, 156, 255, .15);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    width: 100%;
+    max-width: 1400px;
+    padding: 50px 0px;
+
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire background */
+    z-index: -1; /* Places the video behind other content */
+    transform: scaleX(-1);
+    opacity: 0.6;
+  }
+  
+.why-arrow {
+    position: absolute;
+    top: 82%;
+    z-index: 7;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 24px;
+    width: 30px;
+    height: 30px;
+    color: #ffffff6d;
+    background-color: rgba(137, 43, 226, 0.405);
+}
+
+.why-arrow.why-left {
+    left: calc(50% - 32px);
+}
+
+.why-arrow.why-right {
+    right: calc(50% - 32px);
+}
+
 .mainDiv {
+    
+    position: relative;
     --tw-bg-opacity: 0.5;
     background-attachment: fixed;
     background-image: linear-gradient(16deg,  
-    rgba(2, 0, 50, var(--tw-bg-opacity)) 7.54%, /* Use rgba with variable opacity */
-    rgba(3, 0, 30, var(--tw-bg-opacity)) 29.76%  /* Use rgba with variable opacity */
+    rgba(2, 0, 50, var(--tw-bg-opacity)) 7.54%, 
+    rgba(3, 0, 30, var(--tw-bg-opacity)) 29.76%  
     );
     text-align: center;
     display: flex;
@@ -12,24 +102,22 @@
 }
 
 .inDiv {
+    
     display: grid;
-    grid-template-columns: 60% 40%;
-    /* background-color: rgb(14, 177, 123); */
+    grid-template-columns: 50% 50%;
     width: calc(100% - 100px);
     max-width: 1400px;
     align-items: center;
 }
 
 .leftDiv {
-    /* background-color: brown; */
     height: 100%;
     text-align: left;
-    padding: 0px 00px;
+    padding: 0px 0px;
 }
 
 .leftDiv h1 {
     margin: 0px;
-    /* background-color: rgb(40, 56, 56) !important; */
     color: white;
     font-size: 54.334px;
     font-weight: 700;
@@ -43,6 +131,7 @@
     font-size: 32px;
     font-weight: 700;
     line-height: 40px;
+    width: 90%;
 }
 
 .carousel {
@@ -58,52 +147,12 @@
 
 }
 
-
-.slide {
-    /* background-color: brown; */
-    /* height: 300px; */
-    /* padding: 20px; */
-}
-
 .dummy-wrapper {
-    /* margin-top: 20px; */
-    /* background-color: aqua; */
     position: relative;
     display: inline-block;
-    /* Ensure the wrapper fits the icon's content */
-
 }
 
-.dummy-overlay {
-    position: absolute;
-    top: 0px;
-    /* Adjust as needed */
-    left: 0px;
-    /* Adjust as needed */
-    right: 0px;
-    /* Adjust as needed */
-    bottom: 12px;
-    /* Adjust as needed */
-    background: linear-gradient(to bottom, #ffffff09, rgb(3 0 20 / var(--tw-bg-opacity)));
-    --tw-bg-opacity: 1;
-    border-radius: 50px;
-    z-index: 1;
-    /* Ensure it's behind the icon */
 
-}
-
-.dummy-icon {
-    background: linear-gradient(180deg, hsla(0, 0%, 100%, .029), hsla(0, 0%, 100%, .06) 50%, hsla(0, 0%, 100%, 0));
-    width: fit-content;
-    text-align: center;
-    font-size: 42px;
-    margin-bottom: 15px;
-    padding: 8px 32px;
-    padding-bottom: 10px !important;
-    border-radius: 50px;
-    position: relative;
-
-}
 .card-name{
     font-size: 20px;
     margin: 0px;
@@ -113,7 +162,6 @@
 .card-pra{
     font-size: 12px;
     line-height: 22px;
-
     --tw-text-opacity: 1;
     color: rgb(145 142 160 / var(--tw-text-opacity));
 }
@@ -124,6 +172,30 @@
         grid-template-columns: 50% 50%;
 
     }
+    .why-card-item{
+        margin-bottom: 40px !important;
+        margin: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    .why-card-in{
+        /* --tw-bg-opacity: 1;
+        background: linear-gradient(to bottom, rgb(3 0 30 / var(--tw-bg-opacity)), #ffffff10);
+        border: 1px solid transparent;
+        border-image: linear-gradient(to bottom, #ffffff07,  rgb(3 0 20 / var(--tw-bg-opacity))) 1; */
+        color: white;
+        border-radius: 8px;
+        padding: 24px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        backdrop-filter: blur(100%);
+    }
+    
 }
 
 @media (max-width: 700px) {
@@ -132,16 +204,21 @@
 
     }
 
-   
-
 }
+@media (max-width: 500px) {
+    .inDiv {
+        width: calc(100% - 50px);
+    
+    }
+}
+
+
 
 @media (max-width: 500px) {
    
 
     .leftDiv h1 {
         margin: 0px;
-        /* background-color: rgb(40, 56, 56) !important; */
         color: white;
         font-size: 24.334px;
         font-weight: 600;
@@ -166,7 +243,6 @@
     @media (min-width: 501px) and (max-width: 1026px) {
         .leftDiv h1 {
             margin: 0px;
-            /* background-color: rgb(40, 56, 56) !important; */
             color: white;
             font-size: 34.334px;
             font-weight: 700;

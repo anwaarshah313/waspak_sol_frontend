@@ -46,23 +46,24 @@ const Testimonials = ({ data }) => {
     const responsive = {
         superLargeDesktop: {
             breakpoint: { max: 4000, min: 3000 },
-            items: 1
+            items: 2
         },
         desktop: {
-            breakpoint: { max: 3000, min: 1024 },
-            items: 1
+            breakpoint: { max: 3000, min: 800 },
+            items: 2
         },
         tablet: {
-            breakpoint: { max: 1024, min: 464 },
+            breakpoint: { max: 800, min: 526 },
             items: 1
         },
         mobile: {
-            breakpoint: { max: 464, min: 0 },
+            breakpoint: { max: 526, min: 0 },
             items: 1
         }
     };
 
     return (
+        <div className="main-out">
         <div className="itemDiv">
             <Carousel
                 className='carousel-test'
@@ -78,16 +79,22 @@ const Testimonials = ({ data }) => {
                 customLeftArrow={<CustomLeftArrow />}
                 customRightArrow={<CustomRightArrow />}
             >
-                  {testimonialData.map((item, index) => (
+                {testimonialData.map((item, index) => (
                     <div key={index} className="card-item">
-                          <div key={index} className="card-in">
-                        <img src={item.profilePic} alt={item.name} className="profile-pic" />
-                        <h3>{item.name}</h3>
-                        <p className="work">{item.work}</p>
-                        <p className="description">{item.description}</p>
-                    </div></div>
+                        <div key={index} className="card-in">
+                            <div className='top-wrapper'>
+                                <img src={item.profilePic} alt={item.name} className="profile-pic" />
+                                <div className='in-wrapper'>
+                                    <h3>{item.name}</h3>
+                                    <p className="work">{item.work}</p>
+                                </div>
+                            </div>
+                            <p className="description">{item.description}</p>
+                        </div>
+                    </div>
                 ))}
             </Carousel>
+        </div>
         </div>
     );
 };

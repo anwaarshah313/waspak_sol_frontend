@@ -9,7 +9,7 @@
 }
 .productDiv{
     width: calc(100% - 100px);
-    max-width: 1200px;
+    max-width: 1400px;
     display: grid;
     grid-template-columns: repeat(4, 2fr); /* 4 cards per row on large screens */
     gap: 20px;
@@ -22,7 +22,7 @@
 
 .product-card {
     --tw-bg-opacity: 1;
-    background: linear-gradient(to bottom, rgb(3 0 40 / var(--tw-bg-opacity)), #ffffff10);
+    background: linear-gradient(to bottom, rgb(3 0 30 / var(--tw-bg-opacity)), #ffffff09);
     border: 1px solid transparent;
     border-image: linear-gradient(to bottom, #ffffff07,  rgb(3 0 20 / var(--tw-bg-opacity))) 1;
     color: white;
@@ -182,6 +182,7 @@ body.modal-open {
 @media (max-width: 600px) {
     .productDiv {
         grid-template-columns: 1fr; /* 1 card per row on small screens */
+          width: calc(100% - 50px);
     }
 }
 

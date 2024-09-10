@@ -19,7 +19,7 @@
 
 .services-card {
     --tw-bg-opacity: 1;
-    background: linear-gradient(to bottom, rgb(3 0 40 / var(--tw-bg-opacity)), #ffffff10);
+    background: linear-gradient(to bottom, rgb(3 0 30 / var(--tw-bg-opacity)), #ffffff09);
     border: 1px solid transparent;
     border-image: linear-gradient(to bottom, #ffffff07,  rgb(3 0 20 / var(--tw-bg-opacity))) 1;
     color: white;
@@ -142,5 +142,8 @@ body.modal-open {
 @media (max-width: 600px) {
     .servicesDiv {
         grid-template-columns: 1fr; /* 1 card per row on small screens */
+    }
+    .servicesDiv{
+        width: calc(100% - 50px);
     }
 }

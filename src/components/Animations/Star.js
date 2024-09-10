@@ -30,7 +30,7 @@ const Star = () => {
 
   return (
     <div className={`stars-container ${isAnimating ? 'animate' : 'paused'}`}>
-      {generateStars(5)}
+      {generateStars(3)}
     </div>
   );
 };

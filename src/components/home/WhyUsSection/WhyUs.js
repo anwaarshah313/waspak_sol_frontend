@@ -1,82 +1,107 @@
-import React, { useState } from 'react';
-import { Carousel } from 'react-responsive-carousel';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import "./whyus.css"
+import React from 'react';
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import "./whyus.css";
 
-const WhyUs = ({ data }) => {
-    const dummyData = [
-        {
-            id: 1,
-            icon: <i className="bi bi-bricks"></i>,
-            name: "About Us",
-            position: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        },
-        {
-            id: 2,
-            icon: <i className="bi bi-bricks"></i>,
-            name: "About Us",
-            position: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        },
-        {
-            id: 3,
-            icon: <i className="bi bi-bricks"></i>,
-            name: "About Us",
-            position: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        },
-        {
-            id: 4,
-            icon: <i className="bi bi-bricks"></i>,
-            name: "About Us",
-            position: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        },
-        // Add more items as needed
-    ];
+const CustomLeftArrow = ({ onClick }) => (
+  <button className="why-arrow why-left" onClick={onClick}>
+    &lt;
+  </button>
+);
+
+const CustomRightArrow = ({ onClick }) => (
+  <button className="why-arrow why-right" onClick={onClick}>
+    &gt;
+  </button>
+);
+
+const testimonialData = [
+  {
+    profilePic: "https://via.placeholder.com/150",
+    name: "John Doe",
+    work: "Software Developer",
+  },
+  {
+    profilePic: "https://via.placeholder.com/150",
+    name: "Jane Smith",
+    work: "Product Manager",
+  },
+  {
+    profilePic: "https://via.placeholder.com/150",
+    name: "Alice Johnson",
+    work: "UI/UX Designer",
+  },
+  {
+    profilePic: "https://via.placeholder.com/150",
+    name: "Mike Brown",
+    work: "Data Scientist",
+  }
+];
+
+const responsive = {
+  superLargeDesktop: {
+    breakpoint: { max: 4000, min: 3000 },
+    items: 2
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 2
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 526 },
+    items: 1
+  },
+  mobile: {
+    breakpoint: { max: 526, min: 0 },
+    items: 1
+  }
+};
+
+const WhyUs = () => {
+  return (
+    <>
     
-    const [currentIndex, setCurrentIndex] = useState(0);
+      <div className='mainDiv'>
+        <div className='inDiv'>
+        <video className='background-video' autoPlay muted loop>
+        <source src="/images/earth-animation.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
 
-    const handleSlideChange = (index) => {
-        setCurrentIndex(index);
-    };
-
-    return (
-        <div className='mainDiv'>
-            <div className='inDiv'>
-                <div className='leftDiv' >
-                    <h1> Building Future AI</h1>
-                    <p>Idrak embodies the belief that the
-                        integration of technology.
-                    </p>
+          <div className='leftDiv'>
+            <h1>Building Future AI</h1>
+            <p>Idrak embodies the belief that the integration of technology.</p>
+          </div>
+          <div className="whyUs-out">
+            <Carousel
+              className='why-carousel'
+              swipeable={false}
+              draggable={false}
+              showDots={false}
+              responsive={responsive}
+              ssr={true}
+              infinite={true}
+              autoPlay={true}
+              autoPlaySpeed={2000}
+              keyBoardControl={true}
+              customLeftArrow={<CustomLeftArrow />}
+              customRightArrow={<CustomRightArrow />}
+            >
+              {testimonialData.map((item, index) => (
+                <div key={index} className="why-card-item">
+                  <div className="why-card-in">
+                    <img src={item.profilePic} alt={item.name} className="profile-pic" />
+                    <h3 className="card-name">{item.name}</h3>
+                    <p className="card-pra">{item.work}</p>
+                  </div>
                 </div>
-                <Carousel
-                    className='carousel'
-                    showArrows={false}
-                    showIndicators={false}
-                    autoPlay={true}
-                    interval={2000}
-                    infiniteLoop={true}
-                    showThumbs={false}
-                    showStatus={false}
-                    swipeable={true}
-                    dynamicHeight={false}
-                    emulateTouch={true}
-                    useKeyboardArrows={true}
-                    onChange={handleSlideChange}
-                    selectedItem={currentIndex}
-                >
-                    {dummyData.map((person, index) => (
-                        <div key={person.id} className="slide" style={{ padding: 50, boxSizing: 'border-box', textAlign: 'center' }}>
-                            <div className="dummy-wrapper">
-                                <div className="dummy-overlay"></div>
-                                <div className="dummy-icon">{person.icon}</div>
-                            </div>
-                            <h3 className='card-name '>{person.name}</h3>
-                            <p className='card-pra'>{person.position}</p>
-                        </div>
-                    ))}
-                </Carousel>
-            </div>
+              ))}
+            </Carousel>
+          </div>
         </div>
-    );
+      </div>
+    </>
+  );
 };
 
 export default WhyUs;
