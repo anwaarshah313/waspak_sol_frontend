@@ -126,8 +126,8 @@ export default function Product() {
 
     return (
         <div className="product-container">
-            <h1 className='sub-title'>A Complete Solution for AI SaaS Startups</h1>
-            <p className='pra'>Explore the key features of our AI tool,  AI SaaS startups need to thrive.</p>
+            <h1 className='sub-title'>Meeting Cutting-Edge Technology Needs.</h1>
+            <p className='pra'>Explore the key features of our AI tool, AI startups need to thrive.</p>
 
             <div className="productDiv">
                 {products.map((product, index) => (

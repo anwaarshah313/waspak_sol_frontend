@@ -19,7 +19,7 @@ export default function HeroSection() {
             <div className='textDiv'>
                 <h1>We're Architects of Change, <br/> Building Future with AI.</h1>
                 <p>TajirAI embodies the belief that the integration of technology and humanity can achieve unprecedented greatness.
-                    We go beyond being AI developers, serving as agents of </p>
+                We go beyond being AI developers, serving as agents of <b>change</b>, creators of <b>opportunities,</b> and <b>catalysts</b> for <b>growth.</b> </p>
                     <Link
                                 to="/about">
                 <button className='button'> <i className='bi bi-box-arrow-up-right'></i> </button></Link>

@@ -6,30 +6,6 @@ export default function Services() {
 
     const products = [
         {
-            heading: 'Backend Development',
-            description: 'Working with our back-end developers ensures you will get the most attractive outcomes as our product designers are continually dealing with cutting-edge technologies like Python,.NET,  NodeJS, PHP,  and more that provide state-of-the-art results while saving you development time and money.',
-            longDescription: 'This is a more detailed description of Product 1. It includes more information about the features and benefits.',
-            keyPoints: ['Point 1', 'Point 2', 'Point 3'],
-            images: ['image1.jpg', 'image2.jpg'],
-            githubLink: 'https://github.com/product1',
-        },
-        {
-            heading: 'Full Stack Development with AI Integration',
-            description: 'Extend your web applications functionalities with AI at TajirAI. Our team of experienced Full Stack developers helps integrate advanced AI/ML models to enable image recognition, natural language processing, and predictive analytics paving the path for intelligent business operations.',
-            longDescription: 'This is a more detailed description of Product 2. It includes more information about the features and benefits.',
-            keyPoints: ['Point 1', 'Point 2', 'Point 3'],
-            images: ['image1.jpg', 'image2.jpg'],
-            githubLink: 'https://github.com/product2',
-        },
-        {
-            heading: 'Front End Development',
-            description: 'Our team of full-stack developers is an expert in designing and curating the front end for applications that drive engagement. The team has an aptitude for all the latest front-end development languages, such as the most recent versions of AngularJS, React, Vue.JS, Ext.JS, ThreeJS and more.',
-            longDescription: 'This is a more detailed description of Product 2. It includes more information about the features and benefits.',
-            keyPoints: ['Point 1', 'Point 2', 'Point 3'],
-            images: ['image1.jpg', 'image2.jpg'],
-            githubLink: 'https://github.com/product2',
-        },
-        {
             heading: 'AI Software Development',
             description: 'TajirAI expert-level software developers utilize artificial intelligence to automate several front-end processes, such as error-free code generation and nuanced website design mock-ups. Our software specialists program and deploy intelligent predictive modeling to assist back-end developers in building easily scalable systems efficiently, and with AI algorithms, applications are easily customized to recognize and adapt to usage patterns.',
             longDescription: 'This is a more detailed description of Product 2. It includes more information about the features and benefits.',
@@ -46,8 +22,32 @@ export default function Services() {
             githubLink: 'https://github.com/product2',
         },
         {
-            heading: 'Natural Language Processing Developers',
+            heading: 'NLP App Development',
             description: 'TajirAI adept software developers create intuitive natural language processing programs to ensure seamless communication between personnel, as well as to provide end-users with an enriching experience during server programming projects. Our expert software developers customize all NLP resources to accurately translate and expediently convey responses to all users.',
+            longDescription: 'This is a more detailed description of Product 2. It includes more information about the features and benefits.',
+            keyPoints: ['Point 1', 'Point 2', 'Point 3'],
+            images: ['image1.jpg', 'image2.jpg'],
+            githubLink: 'https://github.com/product2',
+        },
+        {
+            heading: 'Back-End Development',
+            description: 'Working with our back-end developers ensures you will get the most attractive outcomes as our product designers are continually dealing with cutting-edge technologies like Python,.NET,  NodeJS, PHP,  and more that provide state-of-the-art results while saving you development time and money.',
+            longDescription: 'This is a more detailed description of Product 1. It includes more information about the features and benefits.',
+            keyPoints: ['Point 1', 'Point 2', 'Point 3'],
+            images: ['image1.jpg', 'image2.jpg'],
+            githubLink: 'https://github.com/product1',
+        },
+        {
+            heading: 'AI-Enhanced Full-Stack Development',
+            description: 'Extend your web applications functionalities with AI at TajirAI. Our team of experienced Full Stack developers helps integrate advanced AI/ML models to enable image recognition, natural language processing, and predictive analytics paving the path for intelligent business operations.',
+            longDescription: 'This is a more detailed description of Product 2. It includes more information about the features and benefits.',
+            keyPoints: ['Point 1', 'Point 2', 'Point 3'],
+            images: ['image1.jpg', 'image2.jpg'],
+            githubLink: 'https://github.com/product2',
+        },
+        {
+            heading: 'Front-End Development',
+            description: 'Our team of full-stack developers is an expert in designing and curating the front end for applications that drive engagement. The team has an aptitude for all the latest front-end development languages, such as the most recent versions of AngularJS, React, Vue.JS, Ext.JS, ThreeJS and more.',
             longDescription: 'This is a more detailed description of Product 2. It includes more information about the features and benefits.',
             keyPoints: ['Point 1', 'Point 2', 'Point 3'],
             images: ['image1.jpg', 'image2.jpg'],
@@ -68,8 +68,8 @@ export default function Services() {
 
     return (
         <div className="services-container">
-            <h1 className='sub-title'>A Complete Solution for AI SaaS Startups</h1>
-            <p className='pra'>Explore the key features of our AI tool, AI SaaS startups need to thrive.</p>
+            <h1 className='sub-title'>Next-Gen Services for Technology Leaders.</h1>
+            <p className='pra'>Explore the key features of our AI tool, AI startups need to thrive.</p>
 
             <div className="servicesDiv">
                 {products.map((product, index) => (
@@ -77,10 +77,10 @@ export default function Services() {
                         <h3>{product.heading}</h3>
                         <p>{product.description}</p>
                         <div className='buttonOutDiv'>
-                        <button className="see-more-btn" 
+                        {/* <button className="see-more-btn" 
                         // onClick={() => handleSeeMore(product)}
                         >See More</button>
-                        <a href='/' target="_blank" rel="noopener noreferrer" className="github-btn">GitHub</a>
+                        <a href='/' target="_blank" rel="noopener noreferrer" className="github-btn">GitHub</a> */}
                         </div>
                     </div>
                 ))}

@@ -51,7 +51,7 @@
 
 .logo{
     color: white;
- scale: 0.5;
+ scale: 0.3;
  /* background-color: aqua; */
  margin-left: -60px;
 }
@@ -95,8 +95,8 @@
         z-index: 99;
     }
     .logo{
-       scale: 0.4;
-     margin-left: -80px;
+       scale: 0.2;
+     margin-left: -120px;
     }
     
     
